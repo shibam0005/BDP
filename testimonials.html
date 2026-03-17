@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Biplabdar Computer Pathshala (BDP)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-laptop-code"></i>
+                BDP
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="testimonials.html" class="nav-link active">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="curriculum.html" class="nav-link">Curriculum</a>
+                </li>
+                <li class="nav-item">
+                    <a href="batches.html" class="nav-link">Upcoming Batches</a>
+                </li>
+                <li class="nav-item">
+                    <a href="verify.html" class="nav-link">Verify Certificate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Testimonials Main Content -->
+    <main class="testimonials page-content">
+        <div class="container">
+            <h1 class="page-title">Student Testimonials</h1>
+            <p class="page-subtitle">Hear success stories from our graduates</p>
+            
+            <div class="testimonial-carousel">
+                <div class="testimonial active">
+                    <p>"BDP transformed my career! The practical approach and expert guidance helped me land my first web development job."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/4A90E2/FFFFFF?text=RS" alt="Rahul Sharma">
+                        <div>
+                            <h4>Rahul Sharma</h4>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"Python course was outstanding! Clear explanations and real-world projects made learning enjoyable."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/4A90E2/FFFFFF?text=PS" alt="Priya Singh">
+                        <div>
+                            <h4>Priya Singh</h4>
+                            <span>Python Developer</span>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"Best decision to join BDP. Responsive faculty and lifetime access to materials is truly valuable."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/4A90E2/FFFFFF?text=AK" alt="Ankit Kumar">
+                        <div>
+                            <h4>Ankit Kumar</h4>
+                            <span>Full Stack Developer</span>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-btn prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&amp;amp;copy; 2024 Biplabdar Computer Pathshala. All rights reserved. | Powered by <i class="fas fa-heart"></i> BDP</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize testimonial carousel
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstTestimonial = document.querySelector('.testimonial');
+            if (firstTestimonial) {
+                firstTestimonial.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

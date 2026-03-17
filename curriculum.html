@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Biplabdar Computer Pathshala (BDP)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-laptop-code"></i>
+                BDP
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="curriculum.html" class="nav-link active">Curriculum</a>
+                </li>
+                <li class="nav-item">
+                    <a href="batches.html" class="nav-link">Upcoming Batches</a>
+                </li>
+                <li class="nav-item">
+                    <a href="verify.html" class="nav-link">Verify Certificate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Curriculum Main Content -->
+    <main class="curriculum page-content">
+        <div class="container">
+            <h1 class="page-title">Course Curriculum</h1>
+            <p class="page-subtitle">Comprehensive courses designed by industry experts for real-world success</p>
+            
+            <div class="curriculum-tabs">
+                <button class="tab-btn active" data-tab="html-css">HTML5 & CSS3</button>
+                <button class="tab-btn" data-tab="javascript">JavaScript ES6+</button>
+                <button class="tab-btn" data-tab="python">Python Programming</button>
+            </div>
+
+            <div class="tab-content active" id="html-css">
+                <div class="course-details">
+                    <div class="course-header">
+                        <i class="fab fa-html5 course-icon-large"></i>
+                        <div>
+                            <h2>HTML5 & CSS3 Mastery</h2>
+                            <span class="course-duration">12 Weeks | Beginner to Advanced</span>
+                        </div>
+                    </div>
+                    <ul class="detailed-curriculum">
+                        <li><i class="fas fa-check"></i> Semantic HTML5 Elements</li>
+                        <li><i class="fas fa-check"></i> CSS Grid & Flexbox Layouts</li>
+                        <li><i class="fas fa-check"></i> Responsive Design Principles (Mobile-First)</li>
+                        <li><i class="fas fa-check"></i> CSS Custom Properties (Variables)</li>
+                        <li><i class="fas fa-check"></i> Animations & Transitions</li>
+                        <li><i class="fas fa-check"></i> CSS Preprocessors (Sass/SCSS)</li>
+                        <li><i class="fas fa-check"></i> Modern Layout Techniques</li>
+                        <li><i class="fas fa-check"></i> Accessibility Best Practices</li>
+                    </ul>
+                    <div class="course-projects">
+                        <h3>Projects You'll Build:</h3>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <h4>Responsive Portfolio</h4>
+                                <p>Fully responsive personal portfolio site</p>
+                            </div>
+                            <div class="project-card">
+                                <h4>E-commerce Landing</h4>
+                                <p>Modern product landing page</p>
+                            </div>
+                            <div class="project-card">
+                                <h4>Dashboard UI</h4>
+                                <p>Interactive admin dashboard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="javascript">
+                <div class="course-details">
+                    <div class="course-header">
+                        <i class="fab fa-js-square course-icon-large"></i>
+                        <div>
+                            <h2>JavaScript ES6+ Mastery</h2>
+                            <span class="course-duration">16 Weeks | Intermediate</span>
+                        </div>
+                    </div>
+                    <ul class="detailed-curriculum">
+                        <li><i class="fas fa-check"></i> ES6+ Syntax (Arrow Functions, Destructuring)</li>
+                        <li><i class="fas fa-check"></i> DOM Manipulation & Events</li>
+                        <li><i class="fas fa-check"></i> Async Programming (Promises, Async/Await)</li>
+                        <li><i class="fas fa-check"></i> OOP in JavaScript (Classes, Inheritance)</li>
+                        <li><i class="fas fa-check"></i> Functional Programming Concepts</li>
+                        <li><i class="fas fa-check"></i> LocalStorage & SessionStorage</li>
+                        <li><i class="fas fa-check"></i> REST APIs & Fetch</li>
+                        <li><i class="fas fa-check"></i> Error Handling & Debugging</li>
+                    </ul>
+                    <div class="course-projects">
+                        <h3>Projects You'll Build:</h3>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <h4>To-Do App</h4>
+                                <p>Full CRUD application with localStorage</p>
+                            </div>
+                            <div class="project-card">
+                                <h4>Weather App</h4>
+                                <p>Real-time weather API integration</p>
+                            </div>
+                            <div class="project-card">
+                                <h4>Quiz Game</h4>
+                                <p>Interactive quiz with scoring</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="python">
+                <div class="course-details">
+                    <div class="course-header">
+                        <i class="fab fa-python course-icon-large"></i>
+                        <div>
+                            <h2>Python Programming Mastery</h2>
+                            <span class="course-duration">14 Weeks | Beginner to Advanced</span>
+                        </div>
+                    </div>
+                    <ul class="detailed-curriculum">
+                        <li><i class="fas fa-check"></i> Python Fundamentals & Data Types</li>
+                        <li><i class="fas fa-check"></i> Control Structures & Functions</li>
+                        <li><i class="fas fa-check"></i> Data Structures (Lists, Dicts, Sets)</li>
+                        <li><i class="fas fa-check"></i> File I/O Operations</li>
+                        <li><i class="fas fa-check"></i> Object-Oriented Programming</li>
+                        <li><i class="fas fa-check"></i> Exception Handling</li>
+                        <li><i class="fas fa-check"></i> Modules & Packages</li>
+                        <li><i class="fas fa-check"></i> Web Scraping with BeautifulSoup</li>
+                    </ul>
+                    <div class="course-projects">
+                        <h3>Projects You'll Build:</h3>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <h4>Expense Tracker</h4>
+                                <p>CLI expense management system</p>
+                            </div>
+                            <div class="project-card">
+                                <h4>Web Scraper</h4>
+                                <p>Automated data collection tool</p>
+                            </div>
+                            <div class="project-card">
+                                <h4>Inventory System</h4>
+                                <p>File-based inventory management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="cta-section batches-bg">
+        <div class="container">
+            <h2>Ready to Start Learning?</h2>
+            <p>Join our upcoming batches with comprehensive curriculum</p>
+            <a href="batches.html" class="cta-button large">View Upcoming Batches</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&amp;copy; 2024 Biplabdar Computer Pathshala. All rights reserved. | Powered by <i class="fas fa-heart"></i> BDP</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Intersection Observer for cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.course-details, .project-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
