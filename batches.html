@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Batches - Biplabdar Computer Pathshala (BDP)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-laptop-code"></i>
+                BDP
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="curriculum.html" class="nav-link">Curriculum</a>
+                </li>
+                <li class="nav-item">
+                    <a href="batches.html" class="nav-link active">Upcoming Batches</a>
+                </li>
+                <li class="nav-item">
+                    <a href="verify.html" class="nav-link">Verify Certificate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Batches Main Content -->
+    <main class="batches page-content">
+        <div class="container">
+            <h1 class="page-title">Upcoming Batches</h1>
+            <p class="page-subtitle">Join our next cohort of skilled developers. Limited seats available!</p>
+            
+            <div class="batches-filter">
+                <button class="filter-btn active" data-filter="all">All Batches</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <div class="batches-grid">
+                <div class="batch-card web active" data-batch="web">
+                    <div class="batch-badge">Starting Soon</div>
+                    <div class="batch-header">
+                        <h3>Web Development Bootcamp</h3>
+                        <div class="batch-meta">
+                            <span class="batch-type">Frontend</span>
+                            <span class="batch-seats">15/20 Seats</span>
+                        </div>
+                    </div>
+                    <div class="batch-details">
+                        <div class="detail-row">
+                            <i class="fas fa-calendar"></i>
+                            <span>Start: 15th Jan 2025</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 3 Months</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Level: Beginner - Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="batch-price">
+                        <span class="price">₹24,999</span>
+                        <span class="original-price">₹35,000</span>
+                        <span class="discount">-29%</span>
+                    </div>
+                    <a href="contact.html" class="enroll-btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="batch-card python active" data-batch="python">
+                    <div class="batch-badge popular">Most Popular</div>
+                    <div class="batch-header">
+                        <h3>Python Masterclass</h3>
+                        <div class="batch-meta">
+                            <span class="batch-type">Backend</span>
+                            <span class="batch-seats">12/25 Seats</span>
+                        </div>
+                    </div>
+                    <div class="batch-details">
+                        <div class="detail-row">
+                            <i class="fas fa-calendar"></i>
+                            <span>Start: 20th Jan 2025</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 2 Months</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Level: Beginner - Advanced</span>
+                        </div>
+                    </div>
+                    <div class="batch-price">
+                        <span class="price">₹18,999</span>
+                        <span class="original-price">₹25,000</span>
+                        <span class="discount">-24%</span>
+                    </div>
+                    <a href="contact.html" class="enroll-btn popular">Join Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="batch-card fullstack active" data-batch="fullstack">
+                    <div class="batch-badge">New Launch</div>
+                    <div class="batch-header">
+                        <h3>Full Stack Developer</h3>
+                        <div class="batch-meta">
+                            <span class="batch-type">Full Stack</span>
+                            <span class="batch-seats">8/15 Seats</span>
+                        </div>
+                    </div>
+                    <div class="batch-details">
+                        <div class="detail-row">
+                            <i class="fas fa-calendar"></i>
+                            <span>Start: 1st Feb 2025</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 6 Months</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Level: Intermediate - Advanced</span>
+                        </div>
+                    </div>
+                    <div class="batch-price">
+                        <span class="price">₹49,999</span>
+                        <span class="original-price">₹65,000</span>
+                        <span class="discount">-23%</span>
+                    </div>
+                    <a href="contact.html" class="enroll-btn">Reserve Seat <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="batch-card web" data-batch="web">
+                    <div class="batch-badge">Next Batch</div>
+                    <div class="batch-header">
+                        <h3>Advanced JavaScript</h3>
+                        <div class="batch-meta">
+                            <span class="batch-type">Frontend</span>
+                            <span class="batch-seats">18/20 Seats</span>
+                        </div>
+                    </div>
+                    <div class="batch-details">
+                        <div class="detail-row">
+                            <i class="fas fa-calendar"></i>
+                            <span>Start: 10th Mar 2025</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 10 Weeks</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Level: Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="batch-price">
+                        <span class="price">₹19,999</span>
+                    </div>
+                    <a href="contact.html" class="enroll-btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Enrollment CTA -->
+    <section class="enrollment-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Career?</h2>
+                <p>Limited seats available. Secure your spot today with our early bird discount.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-button primary large">Enroll Now</a>
+                    <a href="curriculum.html" class="cta-button secondary large">View Curriculum</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&amp;copy; 2024 Biplabdar Computer Pathshala. All rights reserved. | Powered by <i class="fas fa-heart"></i> BDP</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Batch filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.batch-card').forEach(card => card.classList.remove('active'));
+                
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                
+                if (filter === 'all') {
+                    document.querySelectorAll('.batch-card').forEach(card => card.classList.add('active'));
+                } else {
+                    document.querySelectorAll(`.batch-card[data-batch="${filter}"]`).forEach(card => card.classList.add('active'));
+                }
+            });
+        });
+    </script>
+</body>
+</html>
