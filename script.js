@@ -10,7 +10,55 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Mobile Navigation Toggle
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
+const bars = document.querySelectorAll('.bar');
+
+function toggleMobileMenu() {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
 }
+
+function closeMobileMenu() {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}
+
+hamburger.addEventListener('click', toggleMobileMenu);
+
+navLinks.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+});
+
+// Close menu on window resize
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        closeMobileMenu();
+    }
+});
+
+// Animate hamburger bars to X
+function updateHamburgerAnimation() {
+    bars.forEach((bar, index) => {
+        if (hamburger.classList.contains('active')) {
+            if (index === 1) {
+                bar.style.opacity = '0';
+            } else {
+                bar.style.transform = `translateY(${index * 3}px) rotate(${index === 0 ? '45deg' : '-45deg'})`;
+            }
+        } else {
+            bar.style.opacity = '1';
+            bar.style.transform = 'none';
+            bar.style.rotate = '0deg';
+        }
+    });
+}
+
+hamburger.addEventListener('click', updateHamburgerAnimation);
+
+// CSS bar animations already exist, JS enhances cross-browser
 
 
 
