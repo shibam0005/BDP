@@ -54,10 +54,18 @@ body {
     gap: 10px;
 }
 
-.nav-menu {
-    display: flex;
+.navbar-nav {
     list-style: none;
-    gap: 2rem;
+    gap: 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 .nav-link {
@@ -662,13 +670,25 @@ section {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        padding-top: 1rem;
     }
+    
+    .navbar-toggler {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+        font-size: 1.1rem;
+    }
+}
 
-/* Bootstrap handles mobile nav - custom .nav-menu removed */
-
+@media (max-width: 768px) {
     .hero {
         padding: 0 20px;
         text-align: center;
@@ -692,6 +712,19 @@ section {
     .curriculum-grid,
     .batches-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Mobile Curriculum Tabs - Collapse by default */
+    .tab-content {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .tab-content.active {
+        max-height: 1000px;
+        opacity: 1;
     }
 }
 
